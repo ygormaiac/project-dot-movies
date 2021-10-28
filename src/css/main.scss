@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
 
+@mixin page-cart-favorites {
+  max-width: 400px;
+  position: absolute;
+  z-index: 10;
+  left: 980px;
+  margin-top: 100px;
+}
+
+@mixin image-list {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+@mixin title-cart-favorites {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 2500;
+  color: #473c8b;
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -158,36 +181,21 @@
 }
 
 .shopping-cart {
-  max-width: 400px;
-  position: absolute;
-  z-index: 10;
-  left: 980px;
-  margin-top: 100px;
+  @include page-cart-favorites();
 }
 
 .favorite-movies {
-  max-width: 400px;
-  position: absolute;
-  z-index: 10;
-  left: 980px;
-  margin-top: 100px;
+  @include page-cart-favorites();
 }
 
 .movie-cart-img,
 .movie-favorite-img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  @include image-list();
 }
 
 .title-cart,
 .title-favorites {
-  text-align: center;
-  letter-spacing: 4px;
-  font-size: 1.5em;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 2500;
-  color: #473c8b;
+  @include title-cart-favorites();
 }
 
 .header-cart {
