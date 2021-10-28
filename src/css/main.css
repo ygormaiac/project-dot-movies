@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+@media (max-width: 460px) {
+  .shopping-cart, .favorite-movies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #8470ff;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.header-image {
+  padding: 5px;
+  width: 120px;
+}
+
+.header-input {
+  height: 35px;
+  width: 350px;
+  margin: auto;
+  border: 2px solid #473c8b;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-icons {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  color: whitesmoke;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-icons:hover {
+  color: #473c8b;
+}
+
+.header-button-search {
+  margin-top: 16px;
+  left: 863px;
+  position: absolute;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #473c8b;
+}
+
+.main-list-films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 48px 30px;
+  margin-top: 20px;
+  max-width: 900px;
+}
+
+.movie-card {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 380px;
+  margin: 5px;
+  overflow: hidden;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.movie-card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.movie-card-header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-height: 230px;
+  text-align: center;
+}
+
+.movie-card-img {
+  width: 100%;
+  height: 220px;
+}
+
+.movie-card-date {
+  font-size: 0.8em;
+}
+
+.movie-card-favorite-button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 160px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.movie-card-favorite-button:hover {
+  color: #8470ff;
+}
+
+.movie-card-title,
+.movie-card-average,
+.movie-card-price,
+.movie-card-genre {
+  text-align: center;
+  font-size: 0.9em;
+  margin: auto;
+}
+
+.movie-average-genre {
+  margin: auto;
+}
+
+.movie-card-title {
+  letter-spacing: 1px;
+  margin-bottom: -6px;
+  margin-top: 19px;
+}
+
+.movie-card-average {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 6px 9px;
+  margin-top: 2px;
+  margin-left: -16px;
+}
+
+.movie-card-star {
+  padding: 2px;
+}
+
+.movie-card-genre {
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.movie-card-button {
+  padding: 10px;
+  background-color: #8470ff;
+  color: whitesmoke;
+  border: none;
+  font-weight: bolder;
+  font-size: 1em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.shopping-cart {
+  max-width: 400px;
+  position: absolute;
+  z-index: 10;
+  left: 980px;
+  margin-top: 100px;
+}
+
+.favorite-movies {
+  max-width: 400px;
+  position: absolute;
+  z-index: 10;
+  left: 980px;
+  margin-top: 100px;
+}
+
+.movie-cart-img,
+.movie-favorite-img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.title-cart,
+.title-favorites {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 2500;
+  color: #473c8b;
+}
+
+.header-cart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 50px;
+      grid-template-columns: 250px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart-clear {
+  padding: 5px;
+  width: 90px;
+  margin-left: 70px;
+  background-color: #8470ff;
+  color: whitesmoke;
+  border: none;
+  font-weight: bolder;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.shopping-cart-clear:hover {
+  background-color: #473c8b;
+}
+
+.movie-cart-delete,
+.button-favorite {
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #8470ff;
+}
+
+.movie-cart-delete:hover,
+.button-favorite:hover {
+  color: #473c8b;
+}
+
+.itens-cart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 120px 40px 80px 80px;
+      grid-template-columns: 80px 120px 40px 80px 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.itens-favorite {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
