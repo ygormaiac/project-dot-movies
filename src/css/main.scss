@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
 
-@media (max-width: 460px) {
-  .shopping-cart, .favorite-movies {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 568px) {
+
+  .main-list-films {
+    max-width: 568px;
+  }
+
+  .header {
+    max-width: 568px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
   }
 }
 
@@ -17,6 +22,7 @@
   position: fixed;
   top: 0;
   z-index: 20;
+  min-width: 320px;
 }
 
 .header-image {
@@ -50,18 +56,6 @@
   }
 }
 
-.header-button-search {
-  margin-top: 16px;
-  left: 863px;
-  position: absolute;
-  z-index: 10;
-  border: none;
-  background: transparent;
-  outline: none;
-  cursor: pointer;
-  color: #473c8b;
-}
-
 .main-list-films {
   display: flex;
   justify-content: space-evenly;
@@ -69,6 +63,7 @@
   padding: 48px 30px;
   margin-top: 20px;
   max-width: 900px;
+  min-width: 320px;
 }
 
 .movie-card {
@@ -116,6 +111,9 @@
 
   &:hover {
     color: #8470ff;
+  }
+  &:focus {
+    color: #473c8b;
   }
 }
 
@@ -165,6 +163,10 @@
   font-size: 1em;
   letter-spacing: 1px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #473c8b;
+  }
 }
 
 .shopping-cart {
